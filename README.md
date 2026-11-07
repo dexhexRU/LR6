@@ -1,5 +1,6 @@
 # Лабораторная работа №6
 ## Выполнил: Галимов И.Р.
+## Лог команд
 ```
 $ git log --pretty=format:"%h - %ad - %an - %s" --date=short
 c05be17 - 2026-11-07 - Группа 4515 Галимов И.Р. - Начал оформление отчета
@@ -14,3 +15,22 @@ e2b0fd9 - 2026-11-07 - Группа 4515 Галимов И.Р. - Разреше�
 c08a654 - 2020-11-21 - Kurtyanik - Файл создан пустым
 3c6e913 - 2020-11-21 - Kurtyanik - Initial commit
 ```
+
+## Скриншоты
+### Настройка git
+![git config](img/screen1.png)
+
+### Ветки и история
+![ветки](img/screen2.png)
+
+### История ветки master
+![log master](img/screen3.png)
+
+### История ветки report-branch
+![log report-branch](img/screen4.png)
+
+### Слияние с разрешённым конфликтом
+![merge](img/screen5.png)
+
+### Откат коммита
+![revert](img/screen6.png)
