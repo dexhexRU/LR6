@@ -2,18 +2,30 @@
 ## Выполнил: Галимов И.Р.
 ## Лог команд
 ```
-$ git log --pretty=format:"%h - %ad - %an - %s" --date=short
-c05be17 - 2026-11-07 - Группа 4515 Галимов И.Р. - Начал оформление отчета
-d1604e0 - 2026-11-07 - Группа 4515 Галимов И.Р. - Revert "Добавил второй тестовый файл"
-6df21c2 - 2026-11-07 - Группа 4515 Галимов И.Р. - Добавил второй тестовый файл
-0eefb0d - 2026-11-07 - Группа 4515 Галимов И.Р. - Добавил первый тестовый файл
-e2b0fd9 - 2026-11-07 - Группа 4515 Галимов И.Р. - Разрешен конфликт слияния
-0ae0a85 - 2026-11-07 - Группа 4515 Галимов И.Р. - Изменил File11 в master
-86f6ae2 - 2026-11-07 - Группа 4515 Галимов И.Р. - Изменил File11 в feature-branch
-3071277 - 2026-11-07 - Iskander - Create File11
-921f53b - 2020-11-21 - Kurtyanik - Обновление информации
-c08a654 - 2020-11-21 - Kurtyanik - Файл создан пустым
-3c6e913 - 2020-11-21 - Kurtyanik - Initial commit
+git branch -a
+git log HEAD
+git log master
+git log report-branch
+git status
+git commit -m "Добавил скриншоты в отчет"
+git push origin report-branch
+git checkout master
+git pull origin master
+git merge report-branch
+git push origin master
+git checkout report-branch
+git --no-pager log --oneline --graph --all
+git add img
+git commit -m "Добавил скриншоты в папку img"
+git push origin report-branch
+git show e2b0fd9
+git show d1604e0
+git add img
+git commit -m "Добавил скриншоты git show для слияния и отката"
+git push origin report-branch
+git add README.md
+git commit -m "Добавил скриншоты и лог команд в отчет"
+git push origin report-branch
 ```
 
 ## Скриншоты
