@@ -65,10 +65,10 @@ git checkout report-branch
 ## Скриншоты
 
 ### Настройка git
-![git config](img/screen1.png)
+![git config](img/screen2.png)
 
 ### Ветки и история
-![ветки](img/screen2.png)
+![ветки](img/screen1.png)
 
 ### История ветки master
 ![log master](img/screen3.png)
